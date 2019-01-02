@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d8ab61d3-101d-4a5f-8c0d-0850cab46424" name="Default Changelist" comment="" />
+    <list default="true" id="d8ab61d3-101d-4a5f-8c0d-0850cab46424" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/environment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/steps/steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/steps/steps.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/environment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="44" lean-forward="true" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+            <state relative-caret-position="249">
+              <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -40,8 +43,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/steps/steps.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="204">
+              <caret line="29" column="95" lean-forward="true" selection-start-line="29" selection-start-column="95" selection-end-line="29" selection-end-column="95" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,14 +72,14 @@
         <option value="$PROJECT_DIR$/features/login.feature" />
         <option value="$PROJECT_DIR$/features/test.feature" />
         <option value="$PROJECT_DIR$/behave.ini" />
-        <option value="$PROJECT_DIR$/environment.py" />
         <option value="$PROJECT_DIR$/steps/steps.py" />
+        <option value="$PROJECT_DIR$/environment.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2343" />
-    <option name="y" value="-397" />
+    <option name="x" value="-2383" />
+    <option name="y" value="-356" />
     <option name="width" value="1680" />
     <option name="height" value="983" />
   </component>
@@ -136,10 +142,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2343" y="-397" width="1680" height="983" extended-state="0" />
+    <frame x="-2383" y="-356" width="1680" height="983" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20735383" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20735383" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -150,7 +156,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.31425366" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.31425366" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -177,13 +183,6 @@
     <entry file="file://$PROJECT_DIR$/user_interface/login.py" />
     <entry file="file://$PROJECT_DIR$/infrastructure/locate.py" />
     <entry file="file://$PROJECT_DIR$/user_interface/page.py" />
-    <entry file="file://$PROJECT_DIR$/steps/steps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/behave.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -198,10 +197,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/steps/steps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="29" column="95" lean-forward="true" selection-start-line="29" selection-start-column="95" selection-end-line="29" selection-end-column="95" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/environment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="44" lean-forward="true" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+        <state relative-caret-position="249">
+          <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
         </state>
       </provider>
     </entry>

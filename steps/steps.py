@@ -1,3 +1,5 @@
+import time
+
 from behave import when, given, then
 
 
@@ -14,10 +16,18 @@ def step_impl(context, text):
 @when(u'user enters text')
 def step_impl(context):
     if context.os == 'Android':
+        # context.driver.implicitly_wait(1)
+        # context.driver.find_element_by_accessibility_id('textField').send_keys(context.text1)
+        # xpath = '//TextInputLayout[@content-desc="textField."]/android.widget.FrameLayout/android.widget.EditText'
+        # context.driver.find_element_by_xpath(xpath).send_keys(context.text1)
+        # time.sleep(10)
+
+        # context.driver.find_element_by_accessibility_id('Login').send_keys(context.text1)
         xpath = '//TextInputLayout[@content-desc="textField."]/android.widget.FrameLayout/android.widget.EditText'
         context.driver.find_element_by_xpath(xpath).send_keys(context.text1)
         xpath = '//TextInputLayout[@content-desc="TFInView."]/android.widget.FrameLayout/android.widget.EditText'
         context.driver.find_element_by_xpath(xpath).send_keys(context.text2)
+        # context.driver.find_element_by_accessibility_id('textField').send_keys(context.text1)
     else:
         context.driver.find_element_by_accessibility_id('textField').send_keys(context.text1)
         context.driver.find_element_by_accessibility_id('TFInView').send_keys(context.text2)
