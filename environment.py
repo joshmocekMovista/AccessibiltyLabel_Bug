@@ -3,9 +3,9 @@ from appium import webdriver
 
 def before_scenario(context, scenario):
     config = context.config.userdata
-    caps = __ios(config) if config['os'] == 'ios' else __android(config)
-    context.os = caps['platformName']
-    context.driver = webdriver.Remote('http://localhost:4723/wd/hub', caps)
+    context.caps = __ios(config) if config['os'] == 'ios' else __android(config)
+    context.os = context.caps['platformName']
+    context.driver = webdriver.Remote('http://localhost:4723/wd/hub', context.caps)
 
 
 def __android(config):
@@ -13,22 +13,22 @@ def __android(config):
         'platformName': 'Android',
         'platformVersion': '7.1.1',
         'deviceName': 'Pixel API 25',
-        'app': '/YOURPATHTOAPK/Appcelerator_Studio_Workspace'
+        'app': '/Users/PATHTOFOLDER'
                '/accessLabelBug/build/android/bin/accessLabelBug.apk',
         'appPackage': 'com.jm.accessLabelBug',
         'appActivity': '.AccesslabelbugActivity',
-        'newCommandTimeout': '2',
-        # 'autoGrantPermissions': True
+        'automationName': 'uiautomator2',
     }
 
 
 def __ios(config):
     return {
         'app':
-            '/YOURPATH/Appcelerator_Studio_Workspace/accessLabelBug/build/iphone/build/Products'
+            '/Users/PATHTOFOLDER/accessLabelBug/build/iphone/build/Products'
             '/Debug-iphonesimulator/accessLabelBug.app',
         'platformName': 'iOS',
         'platformVersion': '12.0',
         'deviceName': 'iPad (5th generation)',
         # 'autoAcceptAlerts': True
     }
+
